@@ -10,7 +10,6 @@ public class PlayerHealth : MonoBehaviour
     {
         health -= damage;
         health = Mathf.Max(health, 0);
-        Debug.Log("Health: " + health);
 
         if (healthText != null)
         {
@@ -25,7 +24,6 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Player Died");
         gameObject.SetActive(false);
     }
 }
